@@ -1,0 +1,21 @@
+alvorada.wav
+bandeira_nacional.wav
+Banho_de_agua_doce.wav
+Cabo de dia.wav
+i_mediato.wav
+imediato.wav
+inspecao.wav
+licenciados_formar.wav
+mila-ronda.wav
+oficial_intermediário_comandante_no_proprio.m4a
+oficial_superior_comandante_no_proprio.m4a
+oficial_superior_indo_a_bordo.m4a
+ofintcom.wav
+Policia.wav
+rancho_servico.m4a
+render_servico.wav
+result.txt
+reunir_geral.m4a
+silencio.wav
+sinaleiro.wav
+Uniforme.wav
