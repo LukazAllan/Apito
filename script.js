@@ -51,17 +51,27 @@ function next() {
   respostas = [];
   resp_correta = Math.floor(Math.random()*5);
   text_correta = all_answers[Math.floor(Math.random()*all_answers.length)];
-  while (respostas.length < 5){
-    if (i === resp_correta) {
+  
+  for (i = 0;respostas.length < 5; i++){
+    outro = all_answers[Math.floor(Math.random()*all_answers.length)];
+    if (i == resp_correta){
       respostas.push(text_correta);
+    } else {
+      if (outro != resp_correta){
+        Add=true;
+        for (let c = 0; c < respostas.length; c++) {
+          if (respostas[c] == outro){
+            Add=false;
+            break;
+          }
+        }
+        if (Add == true){
+          respostas.push(outro)
+        }
+      }else{pass;}
     }
-    else{
-      select = all_answers[Math.floor(Math.random()*all_answers.length)];
-      if (select != text_correta){
-        respostas.push(select);
-      }
-    }
-  } 
+  }
+ 
   document.getElementById("respostas").innerHTML = "";
   
   for (i = 0; i < respostas.length; i++){

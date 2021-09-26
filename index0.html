@@ -15,16 +15,21 @@
     <script src="/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script src="/bootstrap/js/bootstrap.esm.js" type="text/javascript"></script>
     <script src="/bootstrap/js/bootstrap.js" type="text/javascript"></script> -->
+    <style> 
+      a {
+        pointer-events: none;
+      }
+    </style>
   </head>
   <body>
     <div class="card bg-light mb-3 campo" id="campo">
-      <div class="card-body" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <span id="match1" class="badge rounded-pill bg-secondary" draggable="true" ondragstart="drag(event)">MI</span>
+      <div class="card-body" ondrop="drop(event)" ondragover="allowDrop(event)" touchmove="allowDrop(event)" touchend="drop(event)">
+        <span id="match1" class="badge rounded-pill bg-secondary" draggable="true" ondragstart="drag(event)" touchstart="drag(event)">MI</span>
       </div>
     </div>
     <div class="card bg-light mb-3 campo" id="campo2">
-      <div class="card-body" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <span id="match2" class="badge rounded-pill bg-secondary" draggable="true" ondragstart="drag(event)">LA</span>
+      <div class="card-body" ondrop="drop(event)" ondragover="allowDrop(event)" touchmove="allowDrop(event)" touchend="drop(event)">
+        <span id="match2" class="badge rounded-pill bg-secondary" draggable="true" ondragstart="drag(event)" touchstart="drag(event)"><a>LA</a></span>
       </div>
     </div>
     <script src="script.js"></script>
