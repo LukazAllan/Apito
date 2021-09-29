@@ -29,6 +29,7 @@ let audios = {
   "Oficial Superior Comandante no próprio": "oficial_superior_comandante_no_proprio.mp3",
   "Sinaleiro": "sinaleiro.mp3",
   "Uniforme": "Uniforme.mp3",
+  "Volta": "volta.MP3",
   "Oficial Superior Indo a bordo": "oficial_superior_indo_a_bordo.mp3"
 };
 
@@ -68,6 +69,7 @@ function answer() {
 
 
 function next() {
+  try {handler.pause();} catch {} 
   console.log(`todas as respostas: ${all_answers.length}`);
   respostas_possiveis = [...all_answers];
   resp_correta = Math.floor(Math.random()*5); // Índice da Resposta 
